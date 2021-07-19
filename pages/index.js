@@ -1,17 +1,11 @@
-
-export const getStaticProps = async (context) => {
-	return {
-		props: { name: 'Nehal' },
-	};
-};
+import React from 'react';
+import Hoem from '../components/Home/Home'
 //Work on context
-import Link from 'next/link';
+
 export default function Home() {
 	return (
 		<>
-			<a id='btn'>
-				<Link href='/Movies'> Go for Movies</Link>
-			</a>
+			<Home />
 		</>
 	);
 }

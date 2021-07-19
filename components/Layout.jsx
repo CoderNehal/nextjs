@@ -1,17 +1,11 @@
 import React from 'react';
-import Navbar from './Navbar';
-const styles = {
-	background: '#F48FB1',
-	display: 'flex',
-	justifyContent: 'center',
-	alignItems: 'center',
-	height: '100vh',
-};
+import Navbar from './Navbar/Navbar';
+
 const Layout = (props) => {
 	return (
 		<div>
 			<Navbar />
-			<div style={styles}>{props.children}</div>
+			{props.children}
 		</div>
 	);
 };
